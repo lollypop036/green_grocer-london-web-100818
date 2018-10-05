@@ -1,6 +1,24 @@
+require "pry"
 def consolidate_cart(cart)
-  # code here
+  
+    cart.map do
+     
+      |x| 
+      x.each do |item|
+      binding.pry
+    item[:count] = cart.count(item)
+
+    end
 end
+      cart.uniq! do |y| y.first 
+      end
+  
+
+
+
+
+end
+
 
 def apply_coupons(cart, coupons)
   # code here
